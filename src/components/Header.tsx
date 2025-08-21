@@ -5,8 +5,8 @@ export default function Header() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-8">
-              <div className="w-8 h-8 rounded-full bg-primary flex items-center justify-center">
-                <Settings className="w-4 h-4 text-primary-foreground" />
+              <div className="w-8 h-8 rounded-full flex items-center justify-center">
+                <img src="/eo-logo-white.svg" alt="logo" className="w-8 h-8" />
               </div>
               <div className="flex items-center space-x-8">
                 <div className="flex flex-col">
