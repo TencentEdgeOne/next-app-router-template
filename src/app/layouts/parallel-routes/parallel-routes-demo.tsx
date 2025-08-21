@@ -91,15 +91,6 @@ export default function ParallelRoutesDemo() {
                 <div className="font-medium">{currentSlot.content}</div>
               </div>
 
-              <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
-                <h4 className="font-medium text-primary mb-2">关键特性</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• 使用 @folder 约定创建插槽</li>
-                  <li>• 多个插槽可以同时渲染</li>
-                  <li>• 每个插槽独立导航，不影响其他插槽</li>
-                  <li>• 支持条件渲染和默认插槽</li>
-                </ul>
-              </div>
 
               <div className="mt-4 p-4 bg-muted/50 border border-border/20 rounded-lg">
                 <h4 className="font-medium text-foreground mb-2">实际应用场景</h4>

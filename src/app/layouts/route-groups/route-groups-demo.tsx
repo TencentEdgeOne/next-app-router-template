@@ -118,16 +118,6 @@ export default function RouteGroupsDemo() {
                 ))}
               </div>
 
-              <div className="mt-6 p-4 bg-primary/10 border border-primary/20 rounded-lg">
-                <h4 className="font-medium text-primary mb-2">关键特性</h4>
-                <ul className="text-sm text-muted-foreground space-y-1">
-                  <li>• 使用括号 `({currentGroup.id})` 创建路由组</li>
-                  <li>• 不影响实际的 URL 路径结构</li>
-                  <li>• 可以为每个组应用不同的布局</li>
-                  <li>• 便于代码组织和维护</li>
-                </ul>
-              </div>
-
               <div className="mt-4 p-4 bg-muted/50 border border-border/20 rounded-lg">
                 <h4 className="font-medium text-foreground mb-2">体验真实跳转</h4>
                 <p className="text-sm text-muted-foreground mb-3">

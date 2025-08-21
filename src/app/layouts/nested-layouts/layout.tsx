@@ -79,15 +79,6 @@ export default function NestedLayoutsLayout({ children }: NestedLayoutsLayoutPro
                 └── profile/page.tsx
               </div>
             </div>
-            <div>
-              <h4 className="font-medium text-foreground mb-2">关键特性</h4>
-              <ul className="space-y-1">
-                <li>• 外层布局包含导航和公共元素</li>
-                <li>• 内层布局可以有特定的侧边栏或工具栏</li>
-                <li>• 布局状态在页面切换时保持</li>
-                <li>• 支持多层嵌套和独立渲染</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

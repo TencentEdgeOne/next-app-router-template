@@ -99,34 +99,6 @@ export default function SettingsLayout({ children }: SettingsLayoutProps) {
           </Card>
         </div>
       </div>
-
-      {/* Layout Information */}
-      <Card className="bg-muted/30 border-border/20">
-        <CardHeader>
-          <CardTitle>多层 Nested Layout 结构</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <h4 className="font-medium mb-2">布局层次</h4>
-              <div className="bg-background/50 p-3 rounded border font-mono text-xs space-y-1">
-                <div>1. app/layouts/nested-layouts/layout.tsx ← 外层布局</div>
-                <div>2. app/layouts/nested-layouts/settings/layout.tsx ← 内层布局（当前）</div>
-                <div>3. app/layouts/nested-layouts/settings/page.tsx ← 页面内容</div>
-              </div>
-            </div>
-            <div>
-              <h4 className="font-medium mb-2">嵌套特性</h4>
-              <ul className="text-muted-foreground space-y-1">
-                <li>• 外层布局提供导航和标题</li>
-                <li>• 内层布局提供设置侧边栏</li>
-                <li>• 页面内容独立渲染</li>
-                <li>• 两层布局状态都会保持</li>
-              </ul>
-            </div>
-          </div>
-        </CardContent>
-      </Card>
     </div>
   );
 } 

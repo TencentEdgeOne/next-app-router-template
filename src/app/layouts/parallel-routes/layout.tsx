@@ -72,15 +72,6 @@ export default function ParallelRoutesLayout({
                 └── layout.tsx
               </div>
             </div>
-            <div>
-              <h4 className="font-medium text-foreground mb-2">关键特性</h4>
-              <ul className="space-y-1">
-                <li>• 使用 @folder 约定创建插槽</li>
-                <li>• 在 layout.tsx 中同时渲染多个插槽</li>
-                <li>• 每个插槽独立维护状态</li>
-                <li>• 支持默认插槽和条件渲染</li>
-              </ul>
-            </div>
           </div>
         </div>
       </main>
