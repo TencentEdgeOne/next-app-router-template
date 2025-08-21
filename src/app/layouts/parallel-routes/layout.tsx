@@ -20,10 +20,11 @@ export default function ParallelRoutesLayout({
     <div className="min-h-screen bg-background text-foreground">
       <Header />
       {/* Main Content */}
-      <main className="container mx-auto px-4 py-8">
-        <div className="text-center mb-8">
-          <h1 className="text-3xl font-bold mb-4">Parallel Routes 实际应用</h1>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
+      <main className="container mx-auto px-4 py-12">
+        <div className="text-center mb-12">
+<h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
+            Next.js App Router - Parallel Routes
+          </h1>          <p className="text-muted-foreground max-w-2xl mx-auto">
             这个页面真正使用了 Next.js 的 Parallel Routes 特性。通过 @folder 约定，
             三个插槽（@messages、@users、@settings）同时渲染，每个插槽都有独立的内容和状态。
           </p>
