@@ -2,7 +2,7 @@ import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
-import { Github, Settings, FileText, Layout, Route, Zap, AlertTriangle, Search } from "lucide-react";
+import { FileText, Layout, Route, Zap, AlertTriangle, Search } from "lucide-react";
 
 export default function Home() {
   return (

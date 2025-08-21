@@ -1,4 +1,4 @@
-import { FileQuestion, Home, Search, ArrowLeft } from "lucide-react";
+import { FileQuestion, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Link from "next/link";

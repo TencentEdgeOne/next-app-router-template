@@ -3,6 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { CheckCircle, ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
 import Link from "next/link";
+export const dynamic = 'force-dynamic';
 
 // 整个页面异步 - 这样会触发 loading.js
 export default async function LoadingDemoPage() {

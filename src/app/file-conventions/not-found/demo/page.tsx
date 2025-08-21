@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Header from "@/components/Header";
+export const dynamic = 'force-dynamic';
 
 // 会调用 notFound() 的演示页面
 export default function NotFoundDemoPage() {

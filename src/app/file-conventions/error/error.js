@@ -1,13 +1,12 @@
 "use client";
 
-import { AlertTriangle, RefreshCw, Home } from "lucide-react";
+import { AlertTriangle, Home } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Header from "@/components/Header";
 import Link from "next/link";
 
 export default function Error({
   error,
-  reset,
 }) {
   return (
     <div className="min-h-screen bg-background text-foreground">

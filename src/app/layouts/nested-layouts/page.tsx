@@ -1,45 +1,95 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Github, Settings, Layout } from "lucide-react";
-import NestedLayoutDemo from "./nested-layout-demo";
-import Header from "@/components/Header";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function NestedLayoutsPage() {
   return (
-    <div className="min-h-screen bg-background text-foreground">
-      {/* Header */}
-      <Header />
+    <div className="space-y-6">
+      {/* Welcome Section */}
+      <Card className="bg-gradient-to-br from-primary/10 to-blue-500/10 border-primary/20">
+        <CardHeader className="text-center">
+          <CardTitle className="text-2xl text-primary">
+            🏠 欢迎来到 Nested Layouts 首页
+          </CardTitle>
+        </CardHeader>
+        <CardContent className="text-center space-y-4">
+          <p className="text-muted-foreground">
+            这是嵌套布局的首页。点击上方的导航标签页来体验真正的 Nested Layouts 特性。
+          </p>
+          <p className="text-sm text-muted-foreground">
+            注意：当你在不同页面之间切换时，外层布局（导航栏、标题等）会保持不变，
+            只有内容区域会更新。这就是 Nested Layouts 的核心优势。
+          </p>
+        </CardContent>
+      </Card>
 
+      {/* Features Overview */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <Card className="bg-card/80 border-border/30">
+          <CardHeader>
+            <CardTitle className="text-lg">布局持久化</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground">
+              外层布局在页面切换时保持状态，避免重新渲染，提升用户体验。
+            </p>
+          </CardContent>
+        </Card>
 
-      {/* Main Content */}
-      <main className="container mx-auto px-4 py-12">
-        {/* Title Section */}
-        <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
-            Next.js App Router - Nested Layouts
-          </h1>
-          <div className="max-w-3xl mx-auto space-y-4 text-muted-foreground">
-            <p>
-              在 Next.js 中，Layouts 是特殊的 React 组件，它们包装页面并共享 UI 元素。当用户在不同页面间导航时，Layout 组件会保持其状态，而页面组件会重新渲染。
+        <Card className="bg-card/80 border-border/30">
+          <CardHeader>
+            <CardTitle className="text-lg">共享组件</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground">
+              导航栏、侧边栏等公共组件可以在多个页面间共享，代码更加简洁。
             </p>
-            <p>
-              这种设计模式特别适用于需要在多个页面间保持状态的场景，比如一个带有标签页的 Web 应用。当用户在标签页间切换时，标签页的容器（Layout）保持不变，而内容区域（Page）会更新。这样可以保持计数器等状态，提升用户体验和性能。
+          </CardContent>
+        </Card>
+
+        <Card className="bg-card/80 border-border/30">
+          <CardHeader>
+            <CardTitle className="text-lg">多层嵌套</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground">
+              支持多层布局嵌套，每一层都可以有自己的布局逻辑和状态管理。
             </p>
+          </CardContent>
+        </Card>
+
+        <Card className="bg-card/80 border-border/30">
+          <CardHeader>
+            <CardTitle className="text-lg">性能优化</CardTitle>
+          </CardHeader>
+          <CardContent>
+            <p className="text-sm text-muted-foreground">
+              只有变化的部分会重新渲染，大大提升应用性能和响应速度。
+            </p>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Current Page Info */}
+      <Card className="bg-muted/30 border-border/20">
+        <CardHeader>
+          <CardTitle>当前页面信息</CardTitle>
+        </CardHeader>
+        <CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+            <div>
+              <h4 className="font-medium mb-2">文件路径</h4>
+              <div className="bg-background/50 p-3 rounded border font-mono text-xs">
+                app/layouts/nested-layouts/page.tsx
+              </div>
+            </div>
+            <div>
+              <h4 className="font-medium mb-2">应用的布局</h4>
+              <div className="bg-background/50 p-3 rounded border font-mono text-xs">
+                app/layouts/nested-layouts/layout.tsx
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Demo Section */}
-        <div className="max-w-4xl mx-auto mb-12">
-          <NestedLayoutDemo />
-        </div>
-
-        {/* CTA Section */}
-        <div className="text-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-            查看文档
-          </Button>
-        </div>
-      </main>
+        </CardContent>
+      </Card>
     </div>
   );
 } 

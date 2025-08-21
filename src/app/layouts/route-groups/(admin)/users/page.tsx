@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Settings, Users, ArrowLeft, Plus, Search, MoreHorizontal } from "lucide-react";
+import { Users, ArrowLeft, Plus, Search, MoreHorizontal } from "lucide-react";
 import Link from "next/link";
 
 export default function AdminUsersPage() {

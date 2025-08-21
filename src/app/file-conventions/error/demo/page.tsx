@@ -1,9 +1,6 @@
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AlertTriangle, ArrowLeft } from "lucide-react";
 import Header from "@/components/Header";
-import Link from "next/link";
 
+export const dynamic = 'force-dynamic';
 // 会抛出错误的服务器组件
 async function ErrorThrowingComponent() {
   // 模拟一个服务器端错误

@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { FileText, Github, Settings, Layout } from "lucide-react";
 import RouteGroupsDemo from "./route-groups-demo";
 import Header from "@/components/Header";
 

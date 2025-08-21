@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MessageSquare, User, Clock, Search } from "lucide-react";
 
 export default function MessagesSlot() {

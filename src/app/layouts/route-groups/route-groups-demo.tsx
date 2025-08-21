@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Folder, FileText, Users, Settings, Globe, ArrowRight, ExternalLink } from "lucide-react";
+import { Folder, FileText, Users, Settings, Globe, ExternalLink } from "lucide-react";
 import Link from "next/link";
 
 export default function RouteGroupsDemo() {
@@ -16,9 +16,8 @@ export default function RouteGroupsDemo() {
       icon: Settings,
       description: "管理后台相关页面",
       routes: [
-        { path: "/layouts/route-groups/admin", name: "Dashboard", description: "管理仪表板", realPath: "/layouts/route-groups/admin" },
-        { path: "/layouts/route-groups/admin/users", name: "User Management", description: "用户管理", realPath: "/layouts/route-groups/admin/users" },
-        { path: "/layouts/route-groups/admin/settings", name: "Settings", description: "系统设置", realPath: "/layouts/route-groups/admin/settings" }
+        { path: "/layouts/route-groups/dashboard", name: "Dashboard", description: "管理仪表板", realPath: "/layouts/route-groups/dashboard" },
+        { path: "/layouts/route-groups/users", name: "User Management", description: "用户管理", realPath: "/layouts/route-groups/users" },
       ],
       color: "border-red-500/30 bg-red-500/10"
     },
@@ -30,7 +29,6 @@ export default function RouteGroupsDemo() {
       routes: [
         { path: "/layouts/route-groups/profile", name: "Profile", description: "用户资料", realPath: "/layouts/route-groups/profile" },
         { path: "/layouts/route-groups/orders", name: "Orders", description: "订单历史", realPath: "/layouts/route-groups/orders" },
-        { path: "/layouts/route-groups/favorites", name: "Favorites", description: "收藏夹", realPath: "/layouts/route-groups/favorites" }
       ],
       color: "border-blue-500/30 bg-blue-500/10"
     },
@@ -40,9 +38,7 @@ export default function RouteGroupsDemo() {
       icon: Globe,
       description: "公共页面",
       routes: [
-        { path: "/layouts/route-groups", name: "Home", description: "首页", realPath: "/layouts/route-groups" },
         { path: "/layouts/route-groups/about", name: "About", description: "关于我们", realPath: "/layouts/route-groups/about" },
-        { path: "/layouts/route-groups/contact", name: "Contact", description: "联系我们", realPath: "/layouts/route-groups/contact" }
       ],
       color: "border-green-500/30 bg-green-500/10"
     }
@@ -135,7 +131,7 @@ export default function RouteGroupsDemo() {
               <div className="mt-4 p-4 bg-muted/50 border border-border/20 rounded-lg">
                 <h4 className="font-medium text-foreground mb-2">体验真实跳转</h4>
                 <p className="text-sm text-muted-foreground mb-3">
-                  点击上面的"访问"链接来体验真实的路由跳转。每个路由组都有独立的页面，展示不同的布局和内容。
+                  点击上面的&quot;访问&quot;链接来体验真实的路由跳转。每个路由组都有独立的页面，展示不同的布局和内容。
                 </p>
                 <div className="flex flex-wrap gap-2">
                   {currentGroup.routes.map((route, index) => (

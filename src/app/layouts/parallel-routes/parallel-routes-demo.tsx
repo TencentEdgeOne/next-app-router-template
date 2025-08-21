@@ -1,9 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageSquare, Users, Settings, FileText, ExternalLink } from "lucide-react";
+import { MessageSquare, Users, Settings, FileText } from "lucide-react";
 
 export default function ParallelRoutesDemo() {
   const [activeSlot, setActiveSlot] = useState("messages");

@@ -1,5 +1,5 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Settings, Bell, Shield, Palette, Globe, Moon } from "lucide-react";
+import { CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Settings, Bell, Shield, Moon } from "lucide-react";
 
 export default function SettingsSlot() {
   const settingCategories = [
