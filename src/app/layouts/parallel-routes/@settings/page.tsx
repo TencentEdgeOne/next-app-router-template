@@ -40,7 +40,7 @@ export default function SettingsSlot() {
 
   return (
     <div className="h-full flex flex-col">
-      <CardHeader className="pb-4">
+      <CardHeader className="py-4">
         <div className="flex items-center space-x-2">
           <Settings className="w-5 h-5 text-purple-500" />
           <CardTitle className="text-lg">应用设置</CardTitle>
