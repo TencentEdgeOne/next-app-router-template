@@ -14,7 +14,7 @@ export default function Home() {
       <main className="container mx-auto px-4 py-16">
         {/* Hero Section */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent">
+          <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-foreground via-primary to-foreground bg-clip-text text-transparent py-2">
             Next.js App Router Playground
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">

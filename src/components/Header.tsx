@@ -5,9 +5,11 @@ export default function Header() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-8">
-              <div className="w-8 h-8 rounded-full flex items-center justify-center">
-                <img src="/eo-logo-white.svg" alt="logo" className="w-8 h-8" />
-              </div>
+              <a href="/">
+                <div className="w-8 h-8 rounded-full flex items-center justify-center">
+                  <img src="/eo-logo-white.svg" alt="logo" className="w-8 h-8" />
+                </div>
+              </a>
               <div className="flex items-center space-x-8">
                 <div className="flex flex-col">
                   <span className="text-sm font-medium text-muted-foreground">LAYOUTS 调整</span>
@@ -27,7 +29,7 @@ export default function Header() {
                 </div>
               </div>
             </div>
-            <a href="#" className="w-8 h-8 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
+            <a href="https://github.com/TencentEdgeOne/next-app-router-template" className="w-8 h-8 rounded-full bg-muted flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors">
               <Github className="w-4 h-4" />
             </a>
           </div>
