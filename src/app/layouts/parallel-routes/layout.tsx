@@ -2,7 +2,6 @@ import Header from "@/components/Header";
 import { ReactNode } from "react";
 
 interface ParallelRoutesLayoutProps {
-  children: ReactNode;
   messages: ReactNode;
   users: ReactNode;
   settings: ReactNode;
@@ -10,7 +9,6 @@ interface ParallelRoutesLayoutProps {
 }
 
 export default function ParallelRoutesLayout({
-  children,
   messages,
   users,
   settings,
@@ -78,4 +76,4 @@ export default function ParallelRoutesLayout({
       </main>
     </div>
   );
-} 
+}
