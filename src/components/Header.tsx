@@ -9,12 +9,12 @@ export default function Header() {
             <div className="flex items-center space-x-8">
               <Link href="/">
                 <div className="w-8 h-8 rounded-full flex items-center justify-center">
-                  <Image src="/eo-logo-white.svg" alt="logo" width={32} height={32} />
+                  <Image src="/eo-logo-blue.svg" alt="logo" width={32} height={32} />
                 </div>
               </Link>
               <div className="flex items-center space-x-8">
                 <div className="flex flex-col">
-                  <span className="text-sm font-medium text-muted-foreground">LAYOUTS 调整</span>
+                  <span className="text-sm font-medium text-muted-foreground">LAYOUTS</span>
                   <div className="flex space-x-4 text-sm">
                     <Link href="/layouts/nested-layouts" className="hover:text-primary transition-colors">Nested layouts</Link>
                     <Link href="/layouts/route-groups" className="hover:text-primary transition-colors">Route Groups</Link>

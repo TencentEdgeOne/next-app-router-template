@@ -5,35 +5,35 @@ export default function SettingsSlot() {
   const settingCategories = [
     {
       id: "general",
-      name: "常规设置",
+      name: "General Settings",
       icon: Settings,
       color: "text-blue-500",
       settings: [
-        { name: "语言", value: "中文", description: "应用界面语言" },
-        { name: "时区", value: "UTC+8", description: "系统时区设置" },
-        { name: "主题", value: "深色", description: "界面主题模式" }
+        { name: "Language", value: "English", description: "Application interface language" },
+        { name: "Timezone", value: "UTC+8", description: "System timezone settings" },
+        { name: "Theme", value: "Dark", description: "Interface theme mode" }
       ]
     },
     {
       id: "notifications",
-      name: "通知设置",
+      name: "Notification Settings",
       icon: Bell,
       color: "text-green-500",
       settings: [
-        { name: "邮件通知", value: "开启", description: "接收邮件通知" },
-        { name: "推送通知", value: "开启", description: "接收推送通知" },
-        { name: "声音提醒", value: "关闭", description: "通知声音提醒" }
+        { name: "Email Notifications", value: "On", description: "Receive email notifications" },
+        { name: "Push Notifications", value: "On", description: "Receive push notifications" },
+        { name: "Sound Alerts", value: "Off", description: "Notification sound alerts" }
       ]
     },
     {
       id: "security",
-      name: "安全设置",
+      name: "Security Settings",
       icon: Shield,
       color: "text-red-500",
       settings: [
-        { name: "两步验证", value: "开启", description: "账户安全验证" },
-        { name: "登录提醒", value: "开启", description: "异常登录提醒" },
-        { name: "密码强度", value: "强", description: "密码安全等级" }
+        { name: "Two-Factor Authentication", value: "On", description: "Account security verification" },
+        { name: "Login Alerts", value: "On", description: "Abnormal login alerts" },
+        { name: "Password Strength", value: "Strong", description: "Password security level" }
       ]
     }
   ];
@@ -43,7 +43,7 @@ export default function SettingsSlot() {
       <CardHeader className="py-4">
         <div className="flex items-center space-x-2">
           <Settings className="w-5 h-5 text-purple-500" />
-          <CardTitle className="text-lg">应用设置</CardTitle>
+          <CardTitle className="text-lg">App Settings</CardTitle>
         </div>
       </CardHeader>
       
@@ -75,7 +75,7 @@ export default function SettingsSlot() {
           <div className="flex items-center justify-between p-3 bg-muted/30 rounded-lg">
             <div className="flex items-center space-x-2">
               <Moon className="w-4 h-4 text-orange-500" />
-              <span className="text-sm font-medium">深色模式</span>
+              <span className="text-sm font-medium">Dark Mode</span>
             </div>
             <div className="w-10 h-6 bg-primary rounded-full relative">
               <div className="w-4 h-4 bg-white rounded-full absolute right-1 top-1 transition-transform"></div>

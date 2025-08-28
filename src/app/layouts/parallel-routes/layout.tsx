@@ -23,8 +23,8 @@ export default function ParallelRoutesLayout({
 <h1 className="text-4xl font-bold mb-6 bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent">
             Next.js App Router - Parallel Routes
           </h1>          <p className="text-muted-foreground max-w-2xl mx-auto">
-            这个页面真正使用了 Next.js 的 Parallel Routes 特性。通过 @folder 约定，
-            三个插槽（@messages、@users、@settings）同时渲染，每个插槽都有独立的内容和状态。
+            This page demonstrates Next.js Parallel Routes feature. Using the @folder convention,
+            three slots (@messages, @users, @settings) are rendered simultaneously, each with independent content and state.
           </p>
         </div>
 
@@ -53,10 +53,10 @@ export default function ParallelRoutesLayout({
 
         {/* Explanation */}
         <div className="mt-8 p-6 bg-muted/30 border border-border/20 rounded-lg">
-          <h3 className="text-lg font-medium mb-3">技术实现说明</h3>
+          <h3 className="text-lg font-medium mb-3">Technical Implementation Details</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
             <div>
-              <h4 className="font-medium text-foreground mb-2">文件结构</h4>
+              <h4 className="font-medium text-foreground mb-2">File Structure</h4>
               <div className="font-mono bg-background/50 p-3 rounded border">
                 app/layouts/parallel-routes/
                 <br />

@@ -7,7 +7,7 @@ export default function DefaultSlot() {
       <CardHeader className="pb-4">
         <div className="flex items-center space-x-2">
           <Info className="w-5 h-5 text-muted-foreground" />
-          <CardTitle className="text-lg">欢迎使用</CardTitle>
+          <CardTitle className="text-lg">Welcome</CardTitle>
         </div>
       </CardHeader>
       
@@ -17,11 +17,11 @@ export default function DefaultSlot() {
             <Info className="w-8 h-8 text-muted-foreground" />
           </div>
           <div>
-            <h3 className="text-lg font-medium mb-2">选择左侧插槽开始使用</h3>
+            <h3 className="text-lg font-medium mb-2">Select a slot on the left to get started</h3>
             <p className="text-sm text-muted-foreground">
-              这是一个 Parallel Routes 演示页面，展示了多个插槽同时渲染的效果。
+              This is a Parallel Routes demo page, showcasing multiple slots rendering simultaneously.
               <br />
-              点击左侧的插槽卡片来查看不同的内容。
+              Click on the slot cards on the left to view different content.
             </p>
           </div>
           <div className="flex items-center justify-center space-x-2 text-sm text-muted-foreground">

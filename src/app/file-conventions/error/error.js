@@ -19,15 +19,15 @@ export default function Error({
           </div>
           
           <div>
-            <h2 className="text-2xl font-bold text-red-500 mb-2">出错了！</h2>
+            <h2 className="text-2xl font-bold text-red-500 mb-2">Something went wrong!</h2>
             <p className="text-muted-foreground mb-4">
-              这是 Next.js 自动显示的 error.js 回退界面
+              This is the error.js fallback UI automatically displayed by Next.js
             </p>
           </div>
 
           {/* Error Details */}
           <div className="bg-background/50 p-4 rounded-lg border border-border/20 text-left">
-            <h4 className="font-medium mb-2">错误信息</h4>
+            <h4 className="font-medium mb-2">Error Information</h4>
             <div className="font-mono text-sm text-muted-foreground space-y-1">
               <div>Error: {error?.name || 'Unknown Error'}</div>
               <div>Message: {error?.message || 'Something went wrong'}</div>
@@ -38,10 +38,10 @@ export default function Error({
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             
-            <Button variant="outline" asChild>
+            <Button variant="outline" asChild className="cursor-pointer">
               <Link href="/file-conventions/error">
                 <Home className="w-4 h-4 mr-2" />
-                返回介绍页面
+                Back to Introduction
               </Link>
             </Button>
           </div>

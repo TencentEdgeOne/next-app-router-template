@@ -14,10 +14,10 @@ export default function RouteGroupsDemo() {
       id: "admin",
       name: "Admin Group",
       icon: Settings,
-      description: "管理后台相关页面",
+      description: "Pages related to the admin backend",
       routes: [
-        { path: "/layouts/route-groups/dashboard", name: "Dashboard", description: "管理仪表板", realPath: "/layouts/route-groups/dashboard" },
-        { path: "/layouts/route-groups/users", name: "User Management", description: "用户管理", realPath: "/layouts/route-groups/users" },
+        { path: "/layouts/route-groups/dashboard", name: "Dashboard", description: "Admin Dashboard", realPath: "/layouts/route-groups/dashboard" },
+        { path: "/layouts/route-groups/users", name: "User Management", description: "User Management", realPath: "/layouts/route-groups/users" },
       ],
       color: "border-red-500/30 bg-red-500/10"
     },
@@ -25,10 +25,10 @@ export default function RouteGroupsDemo() {
       id: "user",
       name: "User Group", 
       icon: Users,
-      description: "用户相关页面",
+      description: "Pages related to user profiles",
       routes: [
-        { path: "/layouts/route-groups/profile", name: "Profile", description: "用户资料", realPath: "/layouts/route-groups/profile" },
-        { path: "/layouts/route-groups/orders", name: "Orders", description: "订单历史", realPath: "/layouts/route-groups/orders" },
+        { path: "/layouts/route-groups/profile", name: "Profile", description: "User Profile", realPath: "/layouts/route-groups/profile" },
+        { path: "/layouts/route-groups/orders", name: "Orders", description: "Order History", realPath: "/layouts/route-groups/orders" },
       ],
       color: "border-blue-500/30 bg-blue-500/10"
     },
@@ -36,9 +36,9 @@ export default function RouteGroupsDemo() {
       id: "public",
       name: "Public Group",
       icon: Globe,
-      description: "公共页面",
+      description: "Publicly accessible pages",
       routes: [
-        { path: "/layouts/route-groups/about", name: "About", description: "关于我们", realPath: "/layouts/route-groups/about" },
+        { path: "/layouts/route-groups/about", name: "About", description: "About Us", realPath: "/layouts/route-groups/about" },
       ],
       color: "border-green-500/30 bg-green-500/10"
     }
@@ -93,7 +93,7 @@ export default function RouteGroupsDemo() {
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <Folder className="w-4 h-4" />
-                <span>文件夹结构: (group-name)/</span>
+                <span>Folder Structure: (group-name)/</span>
               </div>
               
               <div className="space-y-3">
@@ -110,28 +110,12 @@ export default function RouteGroupsDemo() {
                         href={route.realPath}
                         className="inline-flex items-center space-x-1 text-sm text-primary hover:text-primary/80 transition-colors"
                       >
-                        <span>访问</span>
+                        <span>Visit</span>
                         <ExternalLink className="w-3 h-3" />
                       </Link>
                     </div>
                   </div>
                 ))}
-              </div>
-
-              <div className="mt-4 p-4 bg-muted/50 border border-border/20 rounded-lg">
-                <h4 className="font-medium text-foreground mb-2">体验真实跳转</h4>
-                <p className="text-sm text-muted-foreground mb-3">
-                  点击上面的&quot;访问&quot;链接来体验真实的路由跳转。每个路由组都有独立的页面，展示不同的布局和内容。
-                </p>
-                <div className="flex flex-wrap gap-2">
-                  {currentGroup.routes.map((route, index) => (
-                    <Link key={index} href={route.realPath}>
-                      <Button variant="outline" size="sm" className="text-xs">
-                        {route.name}
-                      </Button>
-                    </Link>
-                  ))}
-                </div>
               </div>
             </div>
           </CardContent>

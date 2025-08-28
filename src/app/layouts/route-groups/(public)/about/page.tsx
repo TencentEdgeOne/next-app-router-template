@@ -7,26 +7,26 @@ import Link from "next/link";
 export default function AboutPage() {
   const features = [
     {
-      title: "创新技术",
-      description: "采用最新的 Next.js 和现代前端技术栈",
+      title: "Innovative Technology",
+      description: "Utilizing the latest Next.js and modern frontend tech stack",
       icon: Target,
       color: "text-blue-600"
     },
     {
-      title: "用户体验",
-      description: "专注于提供卓越的用户体验和界面设计",
+      title: "User Experience",
+      description: "Focused on delivering excellent user experience and interface design",
       icon: Heart,
       color: "text-red-600"
     },
     {
-      title: "团队协作",
-      description: "拥有专业的开发团队和完善的协作流程",
+      title: "Team Collaboration",
+      description: "Possessing a professional development team and a complete collaboration process",
       icon: Users,
       color: "text-green-600"
     },
     {
-      title: "全球服务",
-      description: "面向全球用户提供稳定可靠的服务",
+      title: "Global Service",
+      description: "Committed to providing stable and reliable services to global users",
       icon: Globe,
       color: "text-purple-600"
     }
@@ -37,21 +37,21 @@ export default function AboutPage() {
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <Button asChild variant="outline" size="sm">
+          <Button asChild variant="outline" size="sm" className="cursor-pointer">
             <Link href="/layouts/route-groups">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              返回 Route Groups 演示
+              Back to Route Groups Demo
             </Link>
           </Button>
         </div>
 
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent mb-4">
-            关于我们
+            About Us
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            这个页面位于 <code className="bg-muted px-2 py-1 rounded text-primary">(public)</code> Route Group 中，
-            路径为 <code className="bg-muted px-2 py-1 rounded text-primary">/layouts/route-groups/about</code>
+            This page is located within the <code className="bg-muted px-2 py-1 rounded text-primary">(public)</code> Route Group,
+            at path <code className="bg-muted px-2 py-1 rounded text-primary">/layouts/route-groups/about</code>
           </p>
         </div>
 
@@ -59,15 +59,15 @@ export default function AboutPage() {
           {/* Company Introduction */}
           <Card className="bg-gradient-to-br from-primary/10 to-blue-500/10 border-primary/20">
             <CardHeader className="text-center">
-              <CardTitle className="text-2xl">我们的使命</CardTitle>
+              <CardTitle className="text-2xl">Our Mission</CardTitle>
             </CardHeader>
             <CardContent className="text-center space-y-4">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                致力于通过创新的技术解决方案，为用户提供卓越的数字体验。
-                我们专注于 Next.js 应用开发，追求代码质量和用户体验的完美平衡。
+                Dedicated to providing exceptional digital experiences through innovative technological solutions.
+                We focus on Next.js application development, striving for a perfect balance between code quality and user experience.
               </p>
               <p className="text-muted-foreground">
-                我们相信技术的力量能够改变世界，让每个人都能享受到科技带来的便利。
+                We believe in the power of technology to change the world, allowing everyone to enjoy the convenience it brings.
               </p>
             </CardContent>
           </Card>
@@ -94,29 +94,29 @@ export default function AboutPage() {
           {/* Contact Information */}
           <Card className="bg-muted/30 border-border/20">
             <CardHeader>
-              <CardTitle>联系我们</CardTitle>
+              <CardTitle>Contact Us</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-medium">邮箱</p>
+                    <p className="font-medium">Email</p>
                     <p className="text-sm text-muted-foreground">contact@example.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-medium">电话</p>
-                    <p className="text-sm text-muted-foreground">+86 400-123-4567</p>
+                    <p className="font-medium">Phone</p>
+                    <p className="text-sm text-muted-foreground">+1 555 123 4567</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-medium">地址</p>
-                    <p className="text-sm text-muted-foreground">北京市朝阳区科技园</p>
+                    <p className="font-medium">Address</p>
+                    <p className="text-sm text-muted-foreground">123 Tech Park, Anytown, USA</p>
                   </div>
                 </div>
               </div>
@@ -126,26 +126,26 @@ export default function AboutPage() {
           {/* Route Group Explanation */}
           <Card className="bg-muted/30 border-border/20">
             <CardHeader>
-              <CardTitle>Route Group 公共页面特性</CardTitle>
+              <CardTitle>Public Page Characteristics of Route Group</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <h4 className="font-medium mb-2">当前路径结构</h4>
+                  <h4 className="font-medium mb-2">Current Path Structure</h4>
                   <div className="bg-background/50 p-3 rounded border font-mono text-xs">
-                    <div>文件路径: app/layouts/route-groups/(public)/about/page.tsx</div>
-                    <div>URL路径: /layouts/route-groups/about</div>
+                    <div>File Path: app/layouts/route-groups/(public)/about/page.tsx</div>
+                    <div>URL Path: /layouts/route-groups/about</div>
                     <div>Route Group: (public)</div>
-                    <div>特性: 公共访问页面</div>
+                    <div>Characteristic: Publicly Accessible Page</div>
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-medium mb-2">公共页面特点</h4>
+                  <h4 className="font-medium mb-2">Public Page Features</h4>
                   <ul className="text-muted-foreground space-y-1">
-                    <li>• 位于 (public) route group 中</li>
-                    <li>• 无需特殊权限即可访问</li>
-                    <li>• 适合放置公司信息、帮助文档等</li>
-                    <li>• 可以设置专门的SEO优化</li>
+                    <li>• Located within the (public) route group</li>
+                    <li>• Accessible without special permissions</li>
+                    <li>• Suitable for company information, help documentation, etc.</li>
+                    <li>• Can be optimized for SEO</li>
                   </ul>
                 </div>
               </div>
@@ -155,4 +155,4 @@ export default function AboutPage() {
       </main>
     </div>
   );
-} 
+}

@@ -10,21 +10,21 @@ export default function ProfilePage() {
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <Button asChild variant="outline" size="sm">
+          <Button asChild variant="outline" size="sm" className="cursor-pointer">
             <Link href="/layouts/route-groups">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              返回 Route Groups 演示
+              Back to Route Groups Demo
             </Link>
           </Button>
         </div>
 
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent mb-4">
-            用户资料页面
+            User Profile Page
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            这个页面位于 <code className="bg-muted px-2 py-1 rounded text-primary">(user)</code> Route Group 中，
-            路径为 <code className="bg-muted px-2 py-1 rounded text-primary">/layouts/route-groups/profile</code>
+            This page is located within the <code className="bg-muted px-2 py-1 rounded text-primary">(user)</code> Route Group,
+            at path <code className="bg-muted px-2 py-1 rounded text-primary">/layouts/route-groups/profile</code>
           </p>
         </div>
 
@@ -35,37 +35,37 @@ export default function ProfilePage() {
               <div className="w-24 h-24 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4">
                 <User className="w-12 h-12 text-primary" />
               </div>
-              <CardTitle className="text-2xl">张三</CardTitle>
-              <p className="text-muted-foreground">高级用户</p>
+              <CardTitle className="text-2xl">John Doe</CardTitle>
+              <p className="text-muted-foreground">Premium User</p>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-medium">邮箱</p>
-                    <p className="text-sm text-muted-foreground">zhangsan@example.com</p>
+                    <p className="font-medium">Email</p>
+                    <p className="text-sm text-muted-foreground">john.doe@example.com</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-medium">电话</p>
-                    <p className="text-sm text-muted-foreground">+86 138 0000 0000</p>
+                    <p className="font-medium">Phone</p>
+                    <p className="text-sm text-muted-foreground">+1 555 123 4567</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-medium">地址</p>
-                    <p className="text-sm text-muted-foreground">北京市朝阳区</p>
+                    <p className="font-medium">Address</p>
+                    <p className="text-sm text-muted-foreground">123 Main St, Anytown, USA</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3">
                   <User className="w-5 h-5 text-primary" />
                   <div>
-                    <p className="font-medium">会员等级</p>
-                    <p className="text-sm text-muted-foreground">VIP 金牌会员</p>
+                    <p className="font-medium">Membership Level</p>
+                    <p className="text-sm text-muted-foreground">VIP Gold Member</p>
                   </div>
                 </div>
               </div>
@@ -75,26 +75,26 @@ export default function ProfilePage() {
           {/* Route Group Explanation */}
           <Card className="bg-muted/30 border-border/20">
             <CardHeader>
-              <CardTitle>Route Group 特性展示</CardTitle>
+              <CardTitle>Route Group Features</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="space-y-4">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                   <div>
-                    <h4 className="font-medium mb-2">当前路由信息</h4>
+                    <h4 className="font-medium mb-2">Current Route Information</h4>
                     <div className="bg-background/50 p-3 rounded border font-mono text-xs">
-                      <div>文件路径: app/layouts/route-groups/(user)/profile/page.tsx</div>
-                      <div>URL路径: /layouts/route-groups/profile</div>
+                      <div>File Path: app/layouts/route-groups/(user)/profile/page.tsx</div>
+                      <div>URL Path: /layouts/route-groups/profile</div>
                       <div>Route Group: (user)</div>
                     </div>
                   </div>
                   <div>
-                    <h4 className="font-medium mb-2">Route Group 特点</h4>
+                    <h4 className="font-medium mb-2">Route Group Characteristics</h4>
                     <ul className="text-muted-foreground space-y-1">
-                      <li>• (user) 文件夹不影响 URL 路径</li>
-                      <li>• 可以在同一层级组织不同类型的路由</li>
-                      <li>• 便于代码管理和权限控制</li>
-                      <li>• 支持不同的布局和中间件</li>
+                      <li>• (user) folder does not affect URL path</li>
+                      <li>• Allows organizing different route types at the same level</li>
+                      <li>• Facilitates code management and access control</li>
+                      <li>• Supports different layouts and middleware</li>
                     </ul>
                   </div>
                 </div>
@@ -105,32 +105,32 @@ export default function ProfilePage() {
           {/* Quick Navigation */}
           <Card className="bg-muted/30 border-border/20">
             <CardHeader>
-              <CardTitle>其他 Route Groups 页面</CardTitle>
+              <CardTitle>Other Route Group Pages</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                <Button asChild variant="outline" className="justify-start">
+                <Button asChild variant="outline" className="justify-start cursor-pointer">
                   <Link href="/layouts/route-groups/orders">
                     <User className="w-4 h-4 mr-2" />
-                    订单历史 (user)
+                    Order History (user)
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="justify-start">
+                <Button asChild variant="outline" className="justify-start cursor-pointer">
                   <Link href="/layouts/route-groups/dashboard">
                     <User className="w-4 h-4 mr-2" />
-                    管理面板 (admin)
+                    Admin Dashboard (admin)
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="justify-start">
+                <Button asChild variant="outline" className="justify-start cursor-pointer">
                   <Link href="/layouts/route-groups/about">
                     <User className="w-4 h-4 mr-2" />
-                    关于我们 (public)
+                    About Us (public)
                   </Link>
                 </Button>
-                <Button asChild variant="outline" className="justify-start">
+                <Button asChild variant="outline" className="justify-start cursor-pointer">
                   <Link href="/layouts/route-groups/users">
                     <User className="w-4 h-4 mr-2" />
-                    用户管理 (admin)
+                    User Management (admin)
                   </Link>
                 </Button>
               </div>
@@ -140,4 +140,4 @@ export default function ProfilePage() {
       </main>
     </div>
   );
-} 
+}

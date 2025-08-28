@@ -5,39 +5,39 @@ export default function UsersSlot() {
   const users = [
     {
       id: 1,
-      name: "张三",
-      avatar: "ZS",
-      status: "在线",
-      department: "技术部",
-      lastSeen: "刚刚"
+      name: "John Doe",
+      avatar: "JD",
+      status: "Online",
+      department: "Engineering",
+      lastSeen: "Just now"
     },
     {
       id: 2,
-      name: "李四",
-      avatar: "LS",
-      status: "在线",
-      department: "产品部",
-      lastSeen: "2分钟前"
+      name: "Jane Smith",
+      avatar: "JS",
+      status: "Online",
+      department: "Product",
+      lastSeen: "2 minutes ago"
     },
     {
       id: 3,
-      name: "王五",
-      avatar: "WW",
-      status: "离线",
-      department: "设计部",
-      lastSeen: "1小时前"
+      name: "Peter Jones",
+      avatar: "PJ",
+      status: "Offline",
+      department: "Design",
+      lastSeen: "1 hour ago"
     },
     {
       id: 4,
-      name: "赵六",
-      avatar: "ZL",
-      status: "在线",
-      department: "运营部",
-      lastSeen: "5分钟前"
+      name: "Alice Brown",
+      avatar: "AB",
+      status: "Online",
+      department: "Operations",
+      lastSeen: "5 minutes ago"
     }
   ];
 
-  const onlineUsers = users.filter(user => user.status === "在线");
+  const onlineUsers = users.filter(user => user.status === "Online");
 
   return (
     <div className="h-full flex flex-col">
@@ -45,10 +45,10 @@ export default function UsersSlot() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <Users className="w-5 h-5 text-green-500" />
-            <CardTitle className="text-lg">用户列表</CardTitle>
+            <CardTitle className="text-lg">User List</CardTitle>
           </div>
           <div className="text-sm text-muted-foreground">
-            {onlineUsers.length} 人在线
+            {onlineUsers.length} Online
           </div>
         </div>
       </CardHeader>
@@ -68,7 +68,7 @@ export default function UsersSlot() {
                   <h3 className="font-medium text-sm">{user.name}</h3>
                   <div className="flex items-center space-x-1">
                     <Circle className={`w-2 h-2 ${
-                      user.status === "在线" ? "text-green-500 fill-current" : "text-gray-400"
+                      user.status === "Online" ? "text-green-500 fill-current" : "text-gray-400"
                     }`} />
                     <span className="text-xs text-muted-foreground">{user.status}</span>
                   </div>
@@ -79,13 +79,13 @@ export default function UsersSlot() {
               </div>
             </div>
             <div className="flex space-x-1">
-              <button className="p-2 hover:bg-muted/50 rounded transition-colors">
+              <button className="p-2 hover:bg-muted/50 rounded transition-colors cursor-pointer">
                 <MessageSquare className="w-4 h-4 text-muted-foreground" />
               </button>
-              <button className="p-2 hover:bg-muted/50 rounded transition-colors">
+              <button className="p-2 hover:bg-muted/50 rounded transition-colors cursor-pointer">
                 <Video className="w-4 h-4 text-muted-foreground" />
               </button>
-              <button className="p-2 hover:bg-muted/50 rounded transition-colors">
+              <button className="p-2 hover:bg-muted/50 rounded transition-colors cursor-pointer">
                 <Phone className="w-4 h-4 text-muted-foreground" />
               </button>
             </div>

@@ -1,23 +1,23 @@
 import Header from "@/components/Header";
 
 export const dynamic = 'force-dynamic';
-// 会抛出错误的服务器组件
+// Server component that will throw an error
 async function ErrorThrowingComponent() {
-  // 模拟一个服务器端错误
-  throw new Error("DEMO_ERROR: 这是一个演示错误，用于展示 error.js 的工作原理。API 请求失败或数据处理出错。");
+  // Simulate a server-side error
+  throw new Error("DEMO_ERROR: This is a demo error to show how error.js works. API request failed or data processing error occurred.");
   
-  // 这行代码永远不会执行，但展示了正常情况下的内容
+  // This line will never be executed, but shows content under normal circumstances
   return (
     <div className="text-center p-8">
-      <h3 className="text-xl font-semibold text-green-500 mb-2">没有错误</h3>
+      <h3 className="text-xl font-semibold text-green-500 mb-2">No Error</h3>
       <p className="text-muted-foreground">
-        如果你看到这个消息，说明没有错误发生
+        If you see this message, no error has occurred
       </p>
     </div>
   );
 }
 
-// 主演示页面 - 服务器组件
+// Main demo page - Server Component
 export default async function ErrorDemoPage() {
   return (
     <div className="min-h-screen bg-background text-foreground">
@@ -25,14 +25,14 @@ export default async function ErrorDemoPage() {
       <main className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent mb-4">
-            Error.js 实时演示
+            Error.js Live Demo
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            这个页面包含会抛出错误的组件，将触发 error.js 显示错误界面
+            This page contains a component that will throw an error, triggering error.js to display the error UI
           </p>
         </div>
 
-        {/* 这个组件会抛出错误，触发 error.js */}
+        {/* This component will throw an error, triggering error.js */}
         <ErrorThrowingComponent />
       </main>
     </div>

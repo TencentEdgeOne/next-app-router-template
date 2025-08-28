@@ -13,13 +13,13 @@ export default function Loading() {
           </div>
           
           <div>
-            <h2 className="text-2xl font-bold text-primary mb-2">正在加载...</h2>
+            <h2 className="text-2xl font-bold text-primary mb-2">Loading...</h2>
             <p className="text-muted-foreground">
-              这是 Next.js 自动显示的 loading.js 回退界面
+              This is the loading.js fallback UI automatically displayed by Next.js
             </p>
           </div>
           
-          {/* Skeleton Loaders - 展示实际内容的结构 */}
+          {/* Skeleton Loaders - Showing the structure of actual content */}
           <div className="space-y-4">
             {/* Title Skeleton */}
             <div className="h-8 bg-muted/50 rounded animate-pulse w-3/4 mx-auto"></div>

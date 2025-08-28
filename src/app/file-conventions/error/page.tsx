@@ -17,67 +17,67 @@ export default function ErrorPage() {
             </h1>
           </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Error UI 是 Next.js 中的一个强大功能，通过创建 error.js 文件，
-            可以在页面或组件出现错误时自动捕获并提供自定义回退界面。
+            Error UI is a powerful feature in Next.js. By creating an error.js file,
+            you can automatically catch errors in pages or components and provide a custom fallback UI.
           </p>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mt-4">
-            当路由段出现错误时，Next.js 会自动显示最近的 error.js 边界，
-            让用户看到友好的错误信息而不是崩溃的页面。
+            When an error occurs in a route segment, Next.js automatically displays the nearest error.js boundary,
+            allowing users to see a friendly error message instead of a crashed page.
           </p>
         </div>
 
         <div className="space-y-8">
-          {/* 演示入口 */}
+          {/* Demo Entry */}
           <Card className="bg-gradient-to-br from-red-500/10 to-orange-500/10 border-red-500/20">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-red-600">
-                🚨 Error.js 实时演示
+                🚨 Error.js Live Demo
               </CardTitle>
               <p className="text-muted-foreground">
-                体验 Next.js 的 error.js 文件约定如何工作
+                Experience how Next.js's error.js file convention works
               </p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center mb-6">
                 <p className="text-muted-foreground mb-4">
-                  点击下方按钮进入专门的演示页面，该页面会抛出错误，真正触发 error.js 的显示。
+                  Click the button below to enter a dedicated demo page that will throw an error, truly triggering the display of error.js.
                 </p>
               </div>
 
               <div className="text-center">
-                <Button asChild size="lg" className="bg-red-600 hover:bg-red-700 text-lg px-8 py-6">
+                <Button asChild size="lg" className="bg-red-600 hover:bg-red-700 text-lg px-8 py-6 cursor-pointer">
                   <Link href="/file-conventions/error/demo">
                     <Play className="w-5 h-5 mr-2" />
-                    进入 Error.js 演示
+                    Enter Error.js Demo
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-2">
-                  演示页面会抛出真实错误，然后显示 error.js 界面
+                  The demo page will throw a real error, then display the error.js UI.
                 </p>
               </div>
             </CardContent>
           </Card>
 
 
-          {/* 文件结构 */}
+          {/* File Structure */}
           <Card className="bg-muted/30 border-border/20">
             <CardHeader>
-              <CardTitle>当前文件结构</CardTitle>
+              <CardTitle>Current File Structure</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="bg-background/50 p-4 rounded-lg border border-border/20">
                 <div className="font-mono text-sm text-muted-foreground space-y-1">
                   <div>app/file-conventions/error/</div>
-                  <div>├── error.js          ← 这个文件定义了错误界面</div>
-                  <div>├── page.tsx          ← 当前入口页面（同步）</div>
+                  <div>├── error.js          ← This file defines the error UI</div>
+                  <div>├── page.tsx          ← Current entry page (synchronous)</div>
                   <div>└── demo/</div>
-                  <div>&nbsp;&nbsp;&nbsp;&nbsp;└── page.tsx    ← 演示页面（会抛出错误，触发 error.js）</div>
+                  <div>&nbsp;&nbsp;&nbsp;&nbsp;└── page.tsx    ← Demo page (will throw an error, triggering error.js)</div>
                 </div>
               </div>
               <div className="mt-4 p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
                 <p className="text-sm text-red-600 font-medium">
-                  ✅ 演示页面会真正抛出错误并触发 error.js，而入口页面保持稳定
+                  ✅ The demo page will genuinely throw an error and trigger error.js, while the entry page remains stable.
                 </p>
               </div>
             </CardContent>
@@ -85,12 +85,12 @@ export default function ErrorPage() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
+          <Button size="lg" className="bg-primary hover:bg-primary/90 cursor-pointer">
             <FileText className="w-4 h-4 mr-2" />
-            查看更多文档
+            View More Documentation
           </Button>
         </div>
       </main>
     </div>
   );
-} 
+}

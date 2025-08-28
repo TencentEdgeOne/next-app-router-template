@@ -7,28 +7,28 @@ import Link from "next/link";
 export default function AdminDashboardPage() {
   const stats = [
     {
-      title: "总用户数",
+      title: "Total Users",
       value: "1,234",
       change: "+12%",
       icon: Users,
       color: "text-blue-600"
     },
     {
-      title: "活跃用户",
+      title: "Active Users",
       value: "856",
       change: "+8%", 
       icon: UserCheck,
       color: "text-green-600"
     },
     {
-      title: "系统负载",
+      title: "System Load",
       value: "67%",
       change: "-5%",
       icon: BarChart3,
       color: "text-orange-600"
     },
     {
-      title: "待处理",
+      title: "Pending Issues",
       value: "23",
       change: "+3",
       icon: AlertCircle,
@@ -41,21 +41,21 @@ export default function AdminDashboardPage() {
       <Header />
       <main className="container mx-auto px-4 py-8">
         <div className="mb-6">
-          <Button asChild variant="outline" size="sm">
+          <Button asChild variant="outline" size="sm" className="cursor-pointer">
             <Link href="/layouts/route-groups">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              返回 Route Groups 演示
+              Back to Route Groups Demo
             </Link>
           </Button>
         </div>
 
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent mb-4">
-            管理仪表板
+            Admin Dashboard
           </h1>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            这个页面位于 <code className="bg-muted px-2 py-1 rounded text-primary">(admin)</code> Route Group 中，
-            路径为 <code className="bg-muted px-2 py-1 rounded text-primary">/layouts/route-groups/dashboard</code>
+            This page is located within the <code className="bg-muted px-2 py-1 rounded text-primary">(admin)</code> Route Group,
+            at path <code className="bg-muted px-2 py-1 rounded text-primary">/layouts/route-groups/dashboard</code>
           </p>
         </div>
 
@@ -88,29 +88,29 @@ export default function AdminDashboardPage() {
             <CardHeader>
               <CardTitle className="flex items-center">
                 <Settings className="w-5 h-5 mr-2 text-red-600" />
-                管理操作
+                Admin Actions
               </CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <Button asChild className="justify-start h-auto p-4 bg-background/50 hover:bg-background/80">
+                <Button asChild className="justify-start h-auto p-4 bg-background/50 hover:bg-background/80 cursor-pointer"> 
                   <Link href="/layouts/route-groups/users">
                     <div className="text-left">
-                      <div className="font-medium">用户管理</div>
-                      <div className="text-sm text-muted-foreground">管理系统用户和权限</div>
+                      <div className="font-medium">User Management</div>
+                      <div className="text-sm text-muted-foreground">Manage system users and permissions</div>
                     </div>
                   </Link>
                 </Button>
-                <Button variant="outline" className="justify-start h-auto p-4">
+                <Button variant="outline" className="justify-start h-auto p-4 cursor-pointer">
                   <div className="text-left">
-                    <div className="font-medium">系统设置</div>
-                    <div className="text-sm text-muted-foreground">配置系统参数</div>
+                    <div className="font-medium">System Settings</div>
+                    <div className="text-sm text-muted-foreground">Configure system parameters</div>
                   </div>
                 </Button>
-                <Button variant="outline" className="justify-start h-auto p-4">
+                <Button variant="outline" className="justify-start h-auto p-4 cursor-pointer">
                   <div className="text-left">
-                    <div className="font-medium">数据分析</div>
-                    <div className="text-sm text-muted-foreground">查看详细报告</div>
+                    <div className="font-medium">Data Analytics</div>
+                    <div className="text-sm text-muted-foreground">View detailed reports</div>
                   </div>
                 </Button>
               </div>
@@ -120,26 +120,26 @@ export default function AdminDashboardPage() {
           {/* Route Group Explanation */}
           <Card className="bg-muted/30 border-border/20">
             <CardHeader>
-              <CardTitle>Route Group 管理页面特性</CardTitle>
+              <CardTitle>Route Group Admin Page Features</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
                 <div>
-                  <h4 className="font-medium mb-2">当前路径结构</h4>
+                  <h4 className="font-medium mb-2">Current Path Structure</h4>
                   <div className="bg-background/50 p-3 rounded border font-mono text-xs">
-                    <div>文件路径: app/layouts/route-groups/(admin)/dashboard/page.tsx</div>
-                    <div>URL路径: /layouts/route-groups/dashboard</div>
+                    <div>File Path: app/layouts/route-groups/(admin)/dashboard/page.tsx</div>
+                    <div>URL Path: /layouts/route-groups/dashboard</div>
                     <div>Route Group: (admin)</div>
-                    <div>特性: 管理员专用页面</div>
+                    <div>Feature: Admin-specific page</div>
                   </div>
                 </div>
                 <div>
-                  <h4 className="font-medium mb-2">Route Group 优势</h4>
+                  <h4 className="font-medium mb-2">Route Group Advantages</h4>
                   <ul className="text-muted-foreground space-y-1">
-                    <li>• 将管理页面分组到 (admin) 中</li>
-                    <li>• 可以设置专门的中间件和布局</li>
-                    <li>• URL 路径保持简洁</li>
-                    <li>• 便于权限控制和代码组织</li>
+                    <li>• Groups admin pages into (admin)</li>
+                    <li>• Allows dedicated middleware and layouts</li>
+                    <li>• Keeps URL paths clean</li>
+                    <li>• Facilitates permission control and code organization</li>
                   </ul>
                 </div>
               </div>

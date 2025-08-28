@@ -18,14 +18,14 @@ export default function Home() {
             Next.js App Router Playground
           </h1>
           <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            以交互式方式演示 Next.js 的 App Router 的核心特性, 用于探索如 Nested layouts、Loading 等 Next.js 功能。
+            Interactively demonstrates the core features of Next.js App Router, for exploring functionalities like Nested layouts, Loading, and more.
           </p>
           <div className="flex justify-center space-x-4">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-200">
-              一键部署
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer">
+              Deploy Now
             </Button>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200">
-              查看文档
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
+              View Documentation
             </Button>
           </div>
         </div>
@@ -49,7 +49,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    嵌套布局在路由间共享 UI 并保持状态
+                    Nested layouts share UI between routes and preserve state.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -64,7 +64,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    路由组组织路由而不影响 URL 路径
+                    Route Groups organize routes without affecting the URL path.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -79,7 +79,7 @@ export default function Home() {
                 </CardHeader>
                 <CardContent>
                   <CardDescription>
-                    并行路由在同一布局渲染多个独立内容
+                    Parallel Routes render multiple independent contents within the same layout.
                   </CardDescription>
                 </CardContent>
               </Card>
@@ -105,7 +105,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <CardDescription>
-                      loading.js 显示数据加载时的回退 UI
+                      loading.js displays a fallback UI while data is loading.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -121,7 +121,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <CardDescription>
-                      error.js 捕获错误并提供自定义回退界面
+                      error.js catches errors and provides a custom fallback UI.
                     </CardDescription>
                   </CardContent>
                 </Card>
@@ -137,7 +137,7 @@ export default function Home() {
                   </CardHeader>
                   <CardContent>
                     <CardDescription>
-                      not-found.js 处理未找到路由的自定义 404 UI
+                      not-found.js handles custom 404 UI for unfound routes.
                     </CardDescription>
                   </CardContent>
                 </Card>

@@ -12,25 +12,25 @@ export default function ParallelRoutesDemo() {
       id: "messages",
       name: "Messages Slot",
       icon: MessageSquare,
-      description: "消息列表和对话",
+      description: "Message list and conversations",
       color: "border-blue-500/30 bg-blue-500/10",
-      content: "收件箱内容 - 显示用户的消息列表"
+      content: "Inbox content - Displays user message list"
     },
     {
       id: "users",
       name: "Users Slot",
       icon: Users,
-      description: "用户管理和列表",
+      description: "User management and list",
       color: "border-green-500/30 bg-green-500/10",
-      content: "用户列表 - 显示在线用户和联系人"
+      content: "User list - Displays online users and contacts"
     },
     {
       id: "settings",
       name: "Settings Slot",
       icon: Settings,
-      description: "应用设置和配置",
+      description: "Application settings and configuration",
       color: "border-purple-500/30 bg-purple-500/10",
-      content: "设置面板 - 显示应用配置选项"
+      content: "Settings panel - Displays application configuration options"
     }
   ];
 
@@ -83,42 +83,42 @@ export default function ParallelRoutesDemo() {
             <div className="space-y-4">
               <div className="flex items-center space-x-2 text-sm text-muted-foreground">
                 <FileText className="w-4 h-4" />
-                <span>文件夹结构: @{currentSlot.id}/</span>
+                <span>Folder Structure: @{currentSlot.id}/</span>
               </div>
               
               <div className="p-4 bg-background/50 rounded-lg border border-border/20">
-                <div className="text-sm text-muted-foreground mb-2">插槽内容预览:</div>
+                <div className="text-sm text-muted-foreground mb-2">Slot Content Preview:</div>
                 <div className="font-medium">{currentSlot.content}</div>
               </div>
 
 
               <div className="mt-4 p-4 bg-muted/50 border border-border/20 rounded-lg">
-                <h4 className="font-medium text-foreground mb-2">实际应用场景</h4>
+                <h4 className="font-medium text-foreground mb-2">Real-world Use Cases</h4>
                 <p className="text-sm text-muted-foreground mb-3">
-                  Parallel Routes 特别适用于需要同时显示多个独立内容的场景：
+                  Parallel Routes are particularly useful for scenarios requiring multiple independent content areas to be displayed simultaneously:
                 </p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   <div className="flex items-center space-x-2 text-sm">
                     <MessageSquare className="w-4 h-4 text-blue-500" />
-                    <span>邮件应用（收件箱 + 联系人）</span>
+                    <span>Email App (Inbox + Contacts)</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Users className="w-4 h-4 text-green-500" />
-                    <span>社交应用（动态 + 好友列表）</span>
+                    <span>Social App (Feed + Friends List)</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <Settings className="w-4 h-4 text-purple-500" />
-                    <span>管理后台（内容 + 侧边栏）</span>
+                    <span>Admin Dashboard (Content + Sidebar)</span>
                   </div>
                   <div className="flex items-center space-x-2 text-sm">
                     <FileText className="w-4 h-4 text-orange-500" />
-                    <span>文档应用（目录 + 内容）</span>
+                    <span>Document App (Table of Contents + Content)</span>
                   </div>
                 </div>
               </div>
 
               <div className="mt-4 p-4 bg-muted/50 border border-border/20 rounded-lg">
-                <h4 className="font-medium text-foreground mb-2">文件结构示例</h4>
+                <h4 className="font-medium text-foreground mb-2">File Structure Example</h4>
                 <div className="bg-background/50 p-3 rounded-lg border border-border/20">
                   <div className="text-sm font-mono text-muted-foreground">
                     app/
@@ -139,7 +139,7 @@ export default function ParallelRoutesDemo() {
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground mt-2">
-                  每个 @folder 都是一个插槽，可以在 layout.tsx 中同时渲染
+                  Each @folder represents a slot that can be rendered simultaneously in layout.tsx
                 </p>
               </div>
             </div>

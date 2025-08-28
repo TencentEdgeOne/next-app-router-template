@@ -5,10 +5,10 @@ import Link from "next/link";
 
 export default function AdminUsersPage() {
   const mockUsers = [
-    { id: 1, name: "张三", email: "zhangsan@example.com", role: "管理员", status: "活跃" },
-    { id: 2, name: "李四", email: "lisi@example.com", role: "用户", status: "活跃" },
-    { id: 3, name: "王五", email: "wangwu@example.com", role: "用户", status: "禁用" },
-    { id: 4, name: "赵六", email: "zhaoliu@example.com", role: "编辑", status: "活跃" },
+    { id: 1, name: "John Doe", email: "john.doe@example.com", role: "Admin", status: "Active" },
+    { id: 2, name: "Jane Smith", email: "jane.smith@example.com", role: "User", status: "Active" },
+    { id: 3, name: "Peter Jones", email: "peter.jones@example.com", role: "User", status: "Disabled" },
+    { id: 4, name: "Alice Brown", email: "alice.brown@example.com", role: "Editor", status: "Active" },
   ];
 
   return (
@@ -19,18 +19,18 @@ export default function AdminUsersPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <Link href="/layouts/route-groups/admin">
-                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground">
+                <Button variant="ghost" size="sm" className="text-muted-foreground hover:text-foreground cursor-pointer">
                   <ArrowLeft className="w-4 h-4 mr-2" />
-                  返回
+                  Back
                 </Button>
               </Link>
               <div className="flex items-center space-x-2">
                 <Users className="w-5 h-5 text-blue-500" />
-                <span className="text-lg font-semibold">用户管理</span>
+                <span className="text-lg font-semibold">User Management</span>
               </div>
             </div>
             <div className="text-sm text-muted-foreground">
-              路由组: (admin)/users - 不影响URL路径
+              Route Group: (admin)/users - Does not affect URL path
             </div>
           </div>
         </div>
@@ -39,10 +39,10 @@ export default function AdminUsersPage() {
       {/* Main Content */}
       <main className="container mx-auto px-4 py-8">
         <div className="mb-8">
-          <h1 className="text-3xl font-bold mb-4">用户管理</h1>
+          <h1 className="text-3xl font-bold mb-4">User Management</h1>
           <p className="text-muted-foreground">
-            这是 Admin 路由组的用户管理页面。URL 路径是 <code className="bg-muted px-2 py-1 rounded">/layouts/route-groups/admin/users</code>，
-            但实际的文件结构是 <code className="bg-muted px-2 py-1 rounded">(admin)/users/page.tsx</code>
+            This is the User Management page for the Admin Route Group. The URL path is <code className="bg-muted px-2 py-1 rounded">/layouts/route-groups/admin/users</code>,
+            but the actual file structure is <code className="bg-muted px-2 py-1 rounded">(admin)/users/page.tsx</code>
           </p>
         </div>
 
@@ -53,21 +53,21 @@ export default function AdminUsersPage() {
               <Search className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
               <input
                 type="text"
-                placeholder="搜索用户..."
+                placeholder="Search users..."
                 className="pl-10 pr-4 py-2 bg-muted/50 border border-border/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20"
               />
             </div>
           </div>
-          <Button className="bg-primary hover:bg-primary/90">
+          <Button className="bg-primary hover:bg-primary/90 cursor-pointer">
             <Plus className="w-4 h-4 mr-2" />
-            添加用户
+            Add User
           </Button>
         </div>
 
         {/* Users Table */}
         <Card>
           <CardHeader>
-            <CardTitle>用户列表</CardTitle>
+            <CardTitle>User List</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="overflow-x-auto">
@@ -75,11 +75,11 @@ export default function AdminUsersPage() {
                 <thead>
                   <tr className="border-b border-border/20">
                     <th className="text-left py-3 px-4 font-medium">ID</th>
-                    <th className="text-left py-3 px-4 font-medium">姓名</th>
-                    <th className="text-left py-3 px-4 font-medium">邮箱</th>
-                    <th className="text-left py-3 px-4 font-medium">角色</th>
-                    <th className="text-left py-3 px-4 font-medium">状态</th>
-                    <th className="text-left py-3 px-4 font-medium">操作</th>
+                    <th className="text-left py-3 px-4 font-medium">Name</th>
+                    <th className="text-left py-3 px-4 font-medium">Email</th>
+                    <th className="text-left py-3 px-4 font-medium">Role</th>
+                    <th className="text-left py-3 px-4 font-medium">Status</th>
+                    <th className="text-left py-3 px-4 font-medium">Actions</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -90,8 +90,8 @@ export default function AdminUsersPage() {
                       <td className="py-3 px-4 text-muted-foreground">{user.email}</td>
                       <td className="py-3 px-4">
                         <span className={`px-2 py-1 rounded-full text-xs ${
-                          user.role === '管理员' ? 'bg-red-500/20 text-red-500' :
-                          user.role === '编辑' ? 'bg-blue-500/20 text-blue-500' :
+                          user.role === 'Admin' ? 'bg-red-500/20 text-red-500' :
+                          user.role === 'Editor' ? 'bg-blue-500/20 text-blue-500' :
                           'bg-green-500/20 text-green-500'
                         }`}>
                           {user.role}
@@ -99,13 +99,13 @@ export default function AdminUsersPage() {
                       </td>
                       <td className="py-3 px-4">
                         <span className={`px-2 py-1 rounded-full text-xs ${
-                          user.status === '活跃' ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'
+                          user.status === 'Active' ? 'bg-green-500/20 text-green-500' : 'bg-red-500/20 text-red-500'
                         }`}>
                           {user.status}
                         </span>
                       </td>
                       <td className="py-3 px-4">
-                        <Button variant="ghost" size="sm">
+                        <Button variant="ghost" size="sm" className="cursor-pointer">
                           <MoreHorizontal className="w-4 h-4" />
                         </Button>
                       </td>
@@ -120,13 +120,13 @@ export default function AdminUsersPage() {
         {/* Navigation */}
         <div className="mt-8">
           <Link href="/layouts/route-groups/admin">
-            <Button variant="outline">
+            <Button variant="outline" className="cursor-pointer">
               <ArrowLeft className="w-4 h-4 mr-2" />
-              返回 Dashboard
+              Back to Dashboard
             </Button>
           </Link>
         </div>
       </main>
     </div>
   );
-} 
+}

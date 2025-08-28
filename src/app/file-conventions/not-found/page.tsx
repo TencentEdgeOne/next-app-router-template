@@ -17,66 +17,66 @@ export default function NotFoundPage() {
             </h1>
           </div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Not Found UI 是 Next.js 中的一个特殊功能，通过创建 not-found.js 文件，
-            可以在用户访问不存在的页面时自动显示自定义的 404 界面。
+            Not Found UI is a special feature in Next.js. By creating a not-found.js file,
+            you can automatically display a custom 404 interface when a user visits a non-existent page.
           </p>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed mt-4">
-            当路由不存在或调用 notFound() 函数时，Next.js 会自动显示最近的 not-found.js 边界，
-            让用户看到友好的 404 信息而不是默认的错误页面。
+            When a route does not exist or the notFound() function is called, Next.js automatically displays the nearest not-found.js boundary,
+            showing users a friendly 404 message instead of the default error page.
           </p>
         </div>
 
         <div className="space-y-8">
-          {/* 演示入口 */}
+          {/* Demo Entry */}
           <Card className="bg-gradient-to-br from-yellow-500/10 to-orange-500/10 border-yellow-500/20">
             <CardHeader className="text-center">
               <CardTitle className="text-2xl text-yellow-600">
-                🔍 Not-Found.js 实时演示
+                🔍 Not-Found.js Live Demo
               </CardTitle>
               <p className="text-muted-foreground">
-                体验 Next.js 的 not-found.js 文件约定如何工作
+                Experience how Next.js's not-found.js file convention works
               </p>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="text-center mb-6">
                 <p className="text-muted-foreground mb-4">
-                  点击下方按钮进入专门的演示页面，该页面会调用 notFound() 函数，真正触发 not-found.js 的显示。
+                  Click the button below to enter a dedicated demo page that calls the notFound() function, truly triggering the display of not-found.js.
                 </p>
               </div>
 
               <div className="text-center">
-                <Button asChild size="lg" className="bg-yellow-600 hover:bg-yellow-700 text-lg px-8 py-6">
+                <Button asChild size="lg" className="bg-yellow-600 hover:bg-yellow-700 text-lg px-8 py-6 cursor-pointer">
                   <Link href="/file-conventions/not-found/demo">
                     <Play className="w-5 h-5 mr-2" />
-                    进入 Not-Found.js 演示
+                    Enter Not-Found.js Demo
                     <ExternalLink className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
                 <p className="text-sm text-muted-foreground mt-2">
-                  演示页面会调用 notFound() 函数，然后显示 not-found.js 界面
+                  The demo page will call the notFound() function and then display the not-found.js UI
                 </p>
               </div>
             </CardContent>
           </Card>
 
-          {/* 文件结构 */}
+          {/* File Structure */}
           <Card className="bg-muted/30 border-border/20">
             <CardHeader>
-              <CardTitle>当前文件结构</CardTitle>
+              <CardTitle>Current File Structure</CardTitle>
             </CardHeader>
             <CardContent>
               <div className="bg-background/50 p-4 rounded-lg border border-border/20">
                 <div className="font-mono text-sm text-muted-foreground space-y-1">
                   <div>app/file-conventions/not-found/</div>
-                  <div>├── not-found.js       ← 这个文件定义了 404 界面</div>
-                  <div>├── page.tsx           ← 当前入口页面（同步）</div>
+                  <div>├── not-found.js       ← This file defines the 404 UI</div>
+                  <div>├── page.tsx           ← Current entry page (synchronous)</div>
                   <div>└── demo/</div>
-                  <div>&nbsp;&nbsp;&nbsp;&nbsp;└── page.tsx     ← 演示页面（会调用 notFound()，触发 not-found.js）</div>
+                  <div>&nbsp;&nbsp;&nbsp;&nbsp;└── page.tsx     ← Demo page (calls notFound(), triggering not-found.js)</div>
                 </div>
               </div>
               <div className="mt-4 p-4 bg-yellow-500/10 border border-yellow-500/20 rounded-lg">
                 <p className="text-sm text-yellow-600 font-medium">
-                  ✅ 演示页面会真正调用 notFound() 并触发 not-found.js，而入口页面保持稳定
+                  ✅ The demo page will truly call notFound() and trigger not-found.js, while the entry page remains stable
                 </p>
               </div>
             </CardContent>
@@ -84,12 +84,12 @@ export default function NotFoundPage() {
         </div>
 
         <div className="text-center mt-12">
-          <Button size="lg" className="bg-primary hover:bg-primary/90">
+          <Button size="lg" className="bg-primary hover:bg-primary/90 cursor-pointer">
             <FileText className="w-4 h-4 mr-2" />
-            查看更多文档
+            View More Documentation
           </Button>
         </div>
       </main>
     </div>
   );
-} 
+}

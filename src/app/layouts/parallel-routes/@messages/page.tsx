@@ -5,25 +5,25 @@ export default function MessagesSlot() {
   const messages = [
     {
       id: 1,
-      from: "张三",
-      subject: "项目进度报告",
-      preview: "请查看最新的项目进度报告，我们需要...",
+      from: "John Doe",
+      subject: "Project Progress Report",
+      preview: "Please check the latest project progress report, we need...",
       time: "14:30",
       unread: true
     },
     {
       id: 2,
-      from: "李四",
-      subject: "会议安排确认",
-      preview: "关于明天的会议安排，请确认时间...",
+      from: "Jane Smith",
+      subject: "Meeting Schedule Confirmation",
+      preview: "Regarding tomorrow's meeting schedule, please confirm the time...",
       time: "13:15",
       unread: false
     },
     {
       id: 3,
-      from: "王五",
-      subject: "文档审核请求",
-      preview: "请帮忙审核一下这份文档，谢谢...",
+      from: "Peter Jones",
+      subject: "Document Review Request",
+      preview: "Please help review this document, thank you...",
       time: "11:45",
       unread: true
     }
@@ -35,17 +35,17 @@ export default function MessagesSlot() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-2">
             <MessageSquare className="w-5 h-5 text-blue-500" />
-            <CardTitle className="text-lg">收件箱</CardTitle>
+            <CardTitle className="text-lg">Inbox</CardTitle>
           </div>
           <div className="text-sm text-muted-foreground">
-            {messages.filter(m => m.unread).length} 条未读
+            {messages.filter(m => m.unread).length} unread
           </div>
         </div>
         <div className="relative">
           <Search className="w-4 h-4 absolute left-3 top-1/2 transform -translate-y-1/2 text-muted-foreground" />
           <input
             type="text"
-            placeholder="搜索消息..."
+            placeholder="Search messages..."
             className="w-full pl-10 pr-4 py-2 bg-muted/50 border border-border/20 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/20 text-sm"
           />
         </div>
@@ -55,7 +55,7 @@ export default function MessagesSlot() {
         {messages.map((message) => (
           <div
             key={message.id}
-            className={`p-3 rounded-lg border cursor-pointer transition-colors ${
+            className={`p-3 rounded-lg border transition-colors ${
               message.unread 
                 ? "bg-blue-500/10 border-blue-500/20 hover:bg-blue-500/20" 
                 : "bg-muted/30 border-border/20 hover:bg-muted/50"

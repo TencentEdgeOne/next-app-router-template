@@ -18,33 +18,23 @@ export default function NestedLayoutsLayout({ children }: NestedLayoutsLayoutPro
         <div className="mb-8">
           <div className="text-center mb-6">
             <h1 className="text-3xl font-bold bg-gradient-to-r from-foreground to-primary bg-clip-text text-transparent mb-4">
-              Nested Layouts 演示
+              Nested Layouts Demo
             </h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              这是一个真正的 Nested Layouts 实现，使用 Next.js 的文件系统路由和多层 layout.tsx
+              This is a true Nested Layouts implementation, utilizing Next.js file-system routing and multiple layout.tsx files.
             </p>
           </div>
           
           {/* Tab Navigation */}
           <div className="flex flex-wrap justify-center gap-2 mb-6 p-4 bg-muted/30 rounded-lg border border-border/20">
-            <Button asChild variant="outline" size="sm">
+            <Button asChild variant="outline" size="sm" className="cursor-pointer">
               <Link href="/layouts/nested-layouts">
-                首页
+                Home
               </Link>
             </Button>
-            <Button asChild variant="outline" size="sm">
+            <Button asChild variant="outline" size="sm" className="cursor-pointer">
               <Link href="/layouts/nested-layouts/dashboard">
-                仪表板
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="sm">
-              <Link href="/layouts/nested-layouts/settings">
-                设置
-              </Link>
-            </Button>
-            <Button asChild variant="outline" size="sm">
-              <Link href="/layouts/nested-layouts/profile">
-                个人资料
+                Dashboard
               </Link>
             </Button>
           </div>
@@ -57,22 +47,22 @@ export default function NestedLayoutsLayout({ children }: NestedLayoutsLayoutPro
 
         {/* Layout Explanation */}
         <div className="mt-8 p-6 bg-muted/30 border border-border/20 rounded-lg">
-          <h3 className="text-lg font-medium mb-3">Nested Layouts 技术实现</h3>
+          <h3 className="text-lg font-medium mb-3">Nested Layouts Technical Implementation</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-muted-foreground">
             <div>
-              <h4 className="font-medium text-foreground mb-2">文件结构</h4>
+              <h4 className="font-medium text-foreground mb-2">File Structure</h4>
               <div className="font-mono bg-background/50 p-3 rounded border text-xs">
                 app/layouts/nested-layouts/
                 <br />
-                ├── layout.tsx ← 外层布局（当前文件）
+                ├── layout.tsx ← Outer Layout (Current File)
                 <br />
-                ├── page.tsx ← 首页
+                ├── page.tsx ← Home Page
                 <br />
                 ├── dashboard/page.tsx
                 <br />
                 ├── settings/
                 <br />
-                │&nbsp;&nbsp;├── layout.tsx ← 内层布局
+                │&nbsp;&nbsp;├── layout.tsx ← Inner Layout
                 <br />
                 │&nbsp;&nbsp;└── page.tsx
                 <br />
