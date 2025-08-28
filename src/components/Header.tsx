@@ -75,7 +75,7 @@ export default function Header() {
           </div>
           <a
             href="https://github.com/TencentEdgeOne/next-app-router-template"
-            className="w-8 h-8 rounded-full flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="w-8 h-8 rounded-full flex items-center justify-center transition-colors"
           >
             <div className="w-6 h-6 text-gray-400 rounded-full flex items-center justify-center ">
                  <svg
