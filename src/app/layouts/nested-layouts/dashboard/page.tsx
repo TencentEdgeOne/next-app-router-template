@@ -109,7 +109,7 @@ export default function DashboardPage() {
           </div>
           <div className="mt-4 p-4 bg-blue-500/10 border border-blue-500/20 rounded-lg">
             <p className="text-sm text-blue-600 font-medium">
-              ✅ This page shares the outer layout's navigation and title; only the content area is independent.
+              ✅ This page shares the outer layout&apos;s navigation and title; only the content area is independent.
             </p>
           </div>
         </CardContent>

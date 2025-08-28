@@ -46,7 +46,7 @@ export default async function LoadingDemoPage() {
                 </div>
                 <div className="p-4 bg-primary/10 rounded-lg border border-primary/20">
                   <p className="text-sm text-primary font-medium">
-                    🎉 Congratulations! You have successfully experienced Next.js's loading.js file convention.
+                    🎉 Congratulations! You have successfully experienced Next.js&apos;s loading.js file convention.
                   </p>
                 </div>
               </div>

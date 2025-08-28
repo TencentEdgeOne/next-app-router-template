@@ -34,7 +34,7 @@ export default function LoadingPage() {
                 🚀 Loading.js Live Demo
               </CardTitle>
               <p className="text-muted-foreground">
-                Experience how Next.js's loading.js file convention works
+                Experience how Next.js&apos;s loading.js file convention works
               </p>
             </CardHeader>
             <CardContent className="space-y-6">

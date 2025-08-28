@@ -34,7 +34,7 @@ export default function NotFoundPage() {
                 🔍 Not-Found.js Live Demo
               </CardTitle>
               <p className="text-muted-foreground">
-                Experience how Next.js's not-found.js file convention works
+                Experience how Next.js&apos;s not-found.js file convention works
               </p>
             </CardHeader>
             <CardContent className="space-y-6">
