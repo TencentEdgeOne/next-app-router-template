@@ -49,7 +49,6 @@ export default function LoadingPage() {
                   <Link href="/file-conventions/loading/demo">
                     <Play className="w-5 h-5 mr-2" />
                     Enter Loading.js Demo
-                    <ExternalLink className="w-4 h-4 ml-2" />
                   </Link>
                 </Button>
               </div>
