@@ -82,12 +82,6 @@ export default function NotFoundPage() {
           </Card>
         </div>
 
-        <div className="text-center mt-12">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 cursor-pointer">
-            <FileText className="w-4 h-4 mr-2" />
-            View More Documentation
-          </Button>
-        </div>
       </main>
     </div>
   );

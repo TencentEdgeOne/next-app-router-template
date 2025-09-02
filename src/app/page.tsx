@@ -22,13 +22,15 @@ export default function Home() {
           </p>
           <div className="flex justify-center space-x-4">
             <a href="https://edgeone.ai/pages/new?from=github&template=next-app-router-template" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer">
-              Deploy Now
-            </Button>
+              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-200 cursor-pointer">
+                Deploy Now
+              </Button>
             </a>
-            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
-              View Documentation
-            </Button>
+            <a href="https://edgeone.ai/document/187317656542044160" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
+                View Documentation
+              </Button>
+            </a>
           </div>
         </div>
 
@@ -42,52 +44,52 @@ export default function Home() {
             </h2>
             <div className="space-y-4">
               <a href="/layouts/nested-layouts" className="mb-4 block">
-              <Card className="bg-card/80 border-border/30 hover:border-primary/50 hover:bg-card/90 transition-all duration-200 hover:shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Route className="w-4 h-4 mr-2 text-primary" />
-                    Nested layouts
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Nested layouts share UI between routes and preserve state.
-                  </CardDescription>
-                </CardContent>
-              </Card>
+                <Card className="bg-card/80 border-border/30 hover:border-primary/50 hover:bg-card/90 transition-all duration-200 hover:shadow-lg">
+                  <CardHeader>
+                    <CardTitle className="flex items-center">
+                      <Route className="w-4 h-4 mr-2 text-primary" />
+                      Nested layouts
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Nested layouts share UI between routes and preserve state.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
               </a>
               <a href="/layouts/route-groups" className="mb-4 block">
-              <Card className="bg-card/80 border-border/30 hover:border-primary/50 hover:bg-card/90 transition-all duration-200 hover:shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Zap className="w-4 h-4 mr-2 text-primary" />
-                    Route Groups
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Route Groups organize routes without affecting the URL path.
-                  </CardDescription>
-                </CardContent>
-              </Card>
+                <Card className="bg-card/80 border-border/30 hover:border-primary/50 hover:bg-card/90 transition-all duration-200 hover:shadow-lg">
+                  <CardHeader>
+                    <CardTitle className="flex items-center">
+                      <Zap className="w-4 h-4 mr-2 text-primary" />
+                      Route Groups
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Route Groups organize routes without affecting the URL path.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
               </a>
               <a href="/layouts/parallel-routes" className="mb-4 block">
-              <Card className="bg-card/80 border-border/30 hover:border-primary/50 hover:bg-card/90 transition-all duration-200 hover:shadow-lg">
-                <CardHeader>
-                  <CardTitle className="flex items-center">
-                    <Layout className="w-4 h-4 mr-2 text-primary" />
-                    Parallel Routes
-                  </CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <CardDescription>
-                    Parallel Routes render multiple independent contents within the same layout.
-                  </CardDescription>
-                </CardContent>
-              </Card>
-            </a>
+                <Card className="bg-card/80 border-border/30 hover:border-primary/50 hover:bg-card/90 transition-all duration-200 hover:shadow-lg">
+                  <CardHeader>
+                    <CardTitle className="flex items-center">
+                      <Layout className="w-4 h-4 mr-2 text-primary" />
+                      Parallel Routes
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <CardDescription>
+                      Parallel Routes render multiple independent contents within the same layout.
+                    </CardDescription>
+                  </CardContent>
+                </Card>
+              </a>
 
-            </div> 
+            </div>
           </div>
 
           {/* File Conventions Section */}

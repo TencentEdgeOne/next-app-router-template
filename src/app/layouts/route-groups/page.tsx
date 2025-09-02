@@ -30,12 +30,6 @@ export default function RouteGroupsPage() {
           <RouteGroupsDemo />
         </div>
 
-        {/* CTA Section */}
-        <div className="text-center">
-          <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground cursor-pointer">
-            View Documentation
-          </Button>
-        </div>
       </main>
     </div>
   );
