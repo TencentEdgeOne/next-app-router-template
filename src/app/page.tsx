@@ -26,7 +26,7 @@ export default function Home() {
                 Deploy Now
               </Button>
             </a>
-            <a href="https://edgeone.ai/document/187317656542044160" target="_blank" rel="noopener noreferrer">
+            <a href="https://pages.edgeone.ai/document/framework-nextjs" target="_blank" rel="noopener noreferrer">
               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-200 cursor-pointer">
                 View Documentation
               </Button>
