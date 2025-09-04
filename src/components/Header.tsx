@@ -36,7 +36,7 @@ export default function Header() {
         {/* Desktop Layout */}
         <div className="hidden lg:flex items-center justify-between">
           <div className="flex items-center space-x-8">
-            <a href="/" target="_blank" rel="noopener noreferrer">
+            <a href="https://pages.edgeone.ai" target="_blank" rel="noopener noreferrer">
               <div className="flex items-center space-x-3">
                 <div className="w-6 h-6 rounded-full flex items-center justify-center">
                   <Image
